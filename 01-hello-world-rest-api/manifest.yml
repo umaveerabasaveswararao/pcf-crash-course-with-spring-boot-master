@@ -1,0 +1,13 @@
+applications:
+- name: hello-world-rest-api
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: target/hello-world-rest-api.jar
+  timeout: 120
+  routes:
+  - route: hello-world-rest-api-chatty-fossa.cfapps.io
+  - route: hello-world-rest-api-uma-333.cfapps.io
+  stack: cflinuxfs3
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git
