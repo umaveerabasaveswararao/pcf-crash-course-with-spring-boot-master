@@ -1,13 +1,8 @@
 # https://github.com/actions/stale
 name: Mark stale issues and pull requests
-
 on:
   schedule:
     - cron: '1 * * * *' # once a day at 2pm
-
-permissions:
-  contents: read
-
 jobs:
   stale:
     permissions:
@@ -27,15 +22,5 @@ jobs:
           stale-issue-label: 'pending info'
           stale-pr-label: 'pending info'
           # automated messages to issue/PR authors
-          stale-issue-message: >
-            This issue has been automatically marked as pending info because it has not had recent activity and needs more information.
-            It will be closed if no further activity occurs.
-          stale-pr-message: >
-            This PR has been automatically marked as pending info because it has not had recent activity and needs further changes.
-            It will be closed if no further activity occurs.
-          close-issue-message: >
-            This issue has been closed due to inactivity and lack of information.
-            If you still encounter this issue, please add the requested information and re-open.
-          close-pr-message:
-            This PR has been closed due to inactivity and lack of changes.
-            If you would like to still work on this PR, please address the review comments and re-open.
+          stale-issue-message: 'This issue has been automatically marked as pending info because it has not had recent activity and needs more information.'
+          stale-pr-message: 'This PR has been automatically marked as pending info because it has not had recent activity and needs further changes.'
