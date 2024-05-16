@@ -3,7 +3,7 @@ name: Mark stale issues and pull requests
 
 on:
   schedule:
-    - cron: '0 19 * * *' # once a day at 2am
+    - cron: '0 19 * * *' # once a day at 7pm
 
 permissions:
   contents: read
@@ -28,10 +28,10 @@ jobs:
           stale-pr-label: 'pending info'
           # automated messages to issue/PR authors
           stale-issue-message: >
-            This issue has been automatically marked as stale because it has not had recent activity and needs more information.
+            This issue has been automatically marked as pending info because it has not had recent activity and needs more information.
             It will be closed if no further activity occurs.
           stale-pr-message: >
-            This PR has been automatically marked as stale because it has not had recent activity and needs further changes.
+            This PR has been automatically marked as pending info because it has not had recent activity and needs further changes.
             It will be closed if no further activity occurs.
           close-issue-message: >
             This issue has been closed due to inactivity and lack of information.
