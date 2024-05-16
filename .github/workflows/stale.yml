@@ -3,7 +3,7 @@ name: Mark stale issues and pull requests
 
 on:
   schedule:
-    - cron: '0 14 * * *' # once a day at 2pm
+    - cron: '1 * * * *' # once a day at 2pm
 
 permissions:
   contents: read
