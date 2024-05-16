@@ -24,3 +24,5 @@ jobs:
           # automated messages to issue/PR authors
           stale-issue-message: 'This issue has been automatically marked as pending info because it has not had recent activity and needs more information.'
           stale-pr-message: 'This PR has been automatically marked as pending info because it has not had recent activity and needs further changes.'
+          close-issue-message: 'This issue has been closed due to inactivity and lack of information.If you still encounter this issue, please add the requested information and re-open.'
+          close-pr-message: 'This PR has been closed due to inactivity and lack of changes.If you would like to still work on this PR, please address the review comments and re-open.'
