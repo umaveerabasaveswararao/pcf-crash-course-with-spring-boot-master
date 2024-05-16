@@ -15,7 +15,7 @@ jobs:
       pull-requests: write # for commenting on a PR and editing labels
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v5
+      - uses: actions/stale@v9
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # timing
