@@ -1,5 +1,5 @@
 # https://github.com/actions/stale
-name: Mark stale issues and pull requests
+name: Mark stale issues and pull requestss
 
 on:
   schedule:
