@@ -2,7 +2,7 @@
 name: Mark stale issues and pull requests
 on:
   schedule:
-    - cron: '0 15 * * *' # once a day at 2pm
+    - cron: '* * * * *' # once a day at 2pm
 jobs:
   stale:
     permissions:
@@ -19,8 +19,8 @@ jobs:
           # labels to watch for, add, and remove
           #only-labels: 'pending info' # only mark issues/PRs as stale if they have this label
           labels-to-remove-when-unstale: 'pending info' # remove label when unstale -- should be manually added back if information is insufficient
-          stale-issue-label: 'pending info'
-          stale-pr-label: 'pending info'
+          stale-issue-label: 'stale,pending info'
+          stale-pr-label: 'stale,pending info'
           # automated messages to issue/PR authors
           stale-issue-message: 'This issue is marked as pending info/stale because it has been open 60 days with no activity. Remove pending info label or comment or this will be closed in 7 days.'
           stale-pr-message: 'This pull request is marked as pending info/stale because it has been open 60 days with no activity. Remove pending info label or comment or this will be closed in 7 days.'
