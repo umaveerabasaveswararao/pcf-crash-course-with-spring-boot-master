@@ -2,7 +2,7 @@
 name: Mark stale issues and pull requests
 on:
   schedule:
-    - cron: '0 15 * * *' # once a day at 2pm
+    - cron: '* * * * *' # once a day at 2pm
 jobs:
   stale:
     permissions:
@@ -14,7 +14,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # timing
-          days-before-stale: 1 # 2 weeks of inactivity
+          days-before-stale: 0 # 2 weeks of inactivity
           days-before-close: 1 # 2 more weeks of inactivity
           # labels to watch for, add, and remove
           only-labels: 'pending info' # only mark issues/PRs as stale if they have this label
