@@ -22,7 +22,8 @@ jobs:
           stale-issue-label: 'pending info'
           stale-pr-label: 'pending info'
           # automated messages to issue/PR authors
-          stale-issue-message: 'This issue has been automatically marked as pending info because it has not had recent activity and needs more information.'
-          stale-pr-message: 'This PR has been automatically marked as pending info because it has not had recent activity and needs further changes.'
+          stale-issue-message: 'This issue is marked as pending info/stale because it has been open 60 days with no activity. Remove pending info label or comment or this will be closed in 7 days.'
+          stale-pr-message: 'This pull request is marked as pending info/stale because it has been open 60 days with no activity. Remove pending info label or comment or this will be closed in 7 days.'
           close-issue-message: 'This issue has been closed due to inactivity and lack of information.If you still encounter this issue, please add the requested information and re-open.'
           close-pr-message: 'This PR has been closed due to inactivity and lack of changes.If you would like to still work on this PR, please address the review comments and re-open.'
+  
