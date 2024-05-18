@@ -18,6 +18,7 @@ jobs:
           days-before-close: 1 # 2 more weeks of inactivity
           # labels to watch for, add, and remove
           #only-labels: 'pending info' # only mark issues/PRs as stale if they have this label
+          remove-stale-when-updated: false
           labels-to-remove-when-unstale: 'pending info' # remove label when unstale -- should be manually added back if information is insufficient
           stale-issue-label: 'pending info'
           stale-pr-label: 'pending info'
