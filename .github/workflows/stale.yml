@@ -1,6 +1,5 @@
 # https://github.com/actions/stale
-name: Mark stale issues and pull requests
-on:
+name: Mark stale issues and pull requestss
   schedule:
     - cron: '* * * * *' # once a day at 2pm
 jobs:
