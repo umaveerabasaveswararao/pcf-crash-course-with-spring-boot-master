@@ -17,7 +17,7 @@ jobs:
           days-before-close: 1 # 2 more weeks of inactivity
           # labels to watch for, add, and remove
           only-labels: 'pending info' # only mark issues/PRs as stale if they have this label
-          labels-to-remove-when-unstale: 'pending info,Stale' # remove label when unstale -- should be manually added back if information is insufficient
+          labels-to-remove-when-unstale: 'pending info' # remove label when unstale -- should be manually added back if information is insufficient
           # automated messages to issue/PR authors
           stale-issue-message: 'This issue is marked as stale because it has been open 60 days with no activity. Remove pending info label or comment or this will be closed in 7 days.'
           stale-pr-message: 'This pull request is marked as stale because it has been open 60 days with no activity. Remove pending info label or comment or this will be closed in 7 days.'
