@@ -1,7 +1,7 @@
 name: Mark stale issues and pull requests
 on:
   schedule:
-    - cron: '* * * * *' # once a day at 2pm
+    - cron: '0 15 * * *' # once a day at 2pm
 jobs:
   stale:
     permissions:
