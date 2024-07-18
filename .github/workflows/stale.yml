@@ -12,6 +12,7 @@ jobs:
       - uses: actions/stale@v9
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          operations-per-run: 200
           # timing
           days-before-stale: 0 # 60 days of inactivity
           days-before-close: 1 # 30 more days of inactivity
